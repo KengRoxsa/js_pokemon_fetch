@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Anuphan', 'Open Sans', sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 24px;
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* เพื่อให้ nav อยู่ด้านบนสุด */
+}
+
+#deckSummary {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    background-color: white;
+    padding: 16px;
+    border: 1px solid rgb(81, 81, 81);
+    z-index: 1000; /* เพื่อให้ deckSummary อยู่ด้านบนสุด */
+}
+
+#deckSummary table {
+    width: 100%;
+}
+
+#deckSummary th {
+    font-weight: 700;
+}
+
+#deckSummary th, #deckSummary td {
+    min-width: 100px;
+    text-align: center;
+}
+
+#productList {
+    display: grid;
+    max-width: 1240px;
+    margin: 5em auto;
+    padding: 0 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.productThumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.productBottomSheet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* เพื่อให้ปุ่มอยู่กึ่งกลางตามสูงสุดของภาพ */
+}
+
+.productName {
+    margin-top: 1em;
+}
+
+button {
+    background-color: rgb(56, 56, 241);
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 0.5em 2em;
+    font-size: 20px;
+    cursor: pointer;
+}
+.pokemon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.productThumbnail {
+    width: 100%;
+    max-height: 200px; /* เพื่อป้องกันรูปภาพยาวเกินไป */
+    object-fit: contain; /* เพื่อให้ภาพปรับขนาดให้พอดีกับ container */
+    border-radius: 8px;
+}

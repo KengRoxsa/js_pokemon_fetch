@@ -1,0 +1,18 @@
+#pokeContain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* สร้าง 4 columns ที่มีความกว้างเท่ากัน */
+    gap: 20px; /* ระยะห่างระหว่าง Pokemon */
+}
+
+.pokemon-container {
+    text-align: center; /* จัดการจัดตำแหน่งของ Pokemon ใน container */
+}
+
+.pokemon-container img {
+    width: 100px; /* ขนาดของรูปภาพ Pokemon */
+    height: 100px;
+}
+
+.pokemon-container p {
+    margin-top: 5px; /* ระยะห่างของชื่อ Pokemon จากรูปภาพ */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Future Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div><h1>Pokemon Shop</h1></div>
+      <div>
+        <!-- เริ่มต้นการเขียน cart หรือ deck -->
+        <button id="viewCart">กดเพื่อซ่อน</button>
+        <div id="deckSummary">
+          <table>
+            <thead>
+              <tr>
+                <th>pokemon</th>
+                <th>จำนวน</th>
+                
+              </tr>
+            </thead>
+            <tbody id="deckSummary_items"></tbody>
+            <tfoot>
+              <th colspan="2">total</th>
+              <td id="deckSummary_total">0</td>
+              <!-- สิ้นสุดการเขียน cart หรือ deck -->
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </nav>
+    <div id="pokeContain"></div>
+    <main>
+      <section id="productList"></section>
+    </main>
+    <!-- <script src="script.js"></script> -->
+    <script src="pokefetch2.js"></script>
+  </body>
+</html>
